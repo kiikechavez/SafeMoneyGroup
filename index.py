@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('home2.html')
+    return render_template('home.html')
 
 @app.route('/cursos')
 def cursos():
@@ -22,4 +22,4 @@ def inscribete():
     return render_template('inscribete.html')
 
 if __name__ == '__main__':
-    app.run('0.0.0.0', port=PORT)
+    app.run('0.0.0.0', port=PORT)  #Dirección IPv4 pública y IP elástica 13.58.90.26
